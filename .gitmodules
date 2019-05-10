@@ -1,0 +1,4 @@
+[submodule "captivea/odoo_addons_demo_v12"]
+	path = captivea/odoo_addons_demo_v12
+	url = git@github.com:captivea/odoo_addons_demo_v12.git
+	branch = dev
