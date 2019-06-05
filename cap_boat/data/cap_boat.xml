@@ -1,0 +1,11 @@
+<odoo>
+    <!-- MANAGE 'BOAT' DATA -->
+    <data noupdate="0">
+
+        <!-- MAIN BOAT -->
+        <record model="boat" id="boat_01">
+            <field name="name">Bateau</field>
+        </record>
+
+    </data>
+</odoo>

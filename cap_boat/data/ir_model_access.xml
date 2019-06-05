@@ -1,0 +1,42 @@
+<odoo>
+    <!-- MANAGE 'IR.MODEL.ACCESS' DATA -->
+    <data noupdate="0">
+
+        <!-- DEFAULT GLOBAL ACCESS TO 'BOAT' MODEL -->
+        <record model="ir.model.access" id="ir_model_access_01">
+            <field name="name">ir_model_access_01</field>
+            <field name="model_id" search="[('model', '=', 'boat')]" model="ir.model"/>
+            <field name="group_id" eval="False"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="active" eval="True"/>
+        </record>
+
+        <!-- DEFAULT GLOBAL ACCESS TO 'PONTOON' MODEL -->
+        <record model="ir.model.access" id="ir_model_access_02">
+            <field name="name">ir_model_access_02</field>
+            <field name="model_id" search="[('model', '=', 'pontoon')]" model="ir.model"/>
+            <field name="group_id" eval="False"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="active" eval="True"/>
+        </record>
+
+        <!-- DEFAULT GLOBAL ACCESS TO 'CABIN' MODEL -->
+        <record model="ir.model.access" id="ir_model_access_03">
+            <field name="name">ir_model_access_03</field>
+            <field name="model_id" search="[('model', '=', 'cabin')]" model="ir.model"/>
+            <field name="group_id" eval="False"/>
+            <field name="perm_unlink" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_read" eval="True"/>
+            <field name="active" eval="True"/>
+        </record>
+
+    </data>
+</odoo>

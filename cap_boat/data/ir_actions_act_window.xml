@@ -1,0 +1,56 @@
+<odoo>
+    <!-- MANAGE 'IR.ACTIONS.ACT_WINDOW' DATA -->
+    <data noupdate="0">
+
+        <!-- ACCESS TO THE DEFAULT LIST VIEW OF 'BOAT' MODEL -->
+        <record model="ir.actions.act_window" id="ir_actions_act_window_01">
+            <field name="name">Boats</field>
+            <field name="res_model">boat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- ACCESS TO THE DEFAULT LIST VIEW OF 'PONTOON' MODEL -->
+        <record model="ir.actions.act_window" id="ir_actions_act_window_02">
+            <field name="name">Pontoons</field>
+            <field name="res_model">pontoon</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- ACCESS TO THE DEFAULT LIST VIEW OF 'CABIN' MODEL -->
+        <record model="ir.actions.act_window" id="ir_actions_act_window_03">
+            <field name="name">Cabins</field>
+            <field name="res_model">cabin</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- ADD 'PONTOON' FROM 'BOAT' -->
+        <record model="ir.actions.act_window" id="ir_actions_act_window_04">
+            <field name="name">Add Pontoons</field>
+            <field name="res_model">pontoon.mass_creating</field>
+            <field name="binding_model_id" ref="cap_boat.model_boat"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="cap_boat.pontoon_mass_creating_form_01"/>
+            <field name="target">new</field>
+        </record>
+
+        <!-- 'CABIN' MASS EDITING -->
+        <record model="ir.actions.act_window" id="ir_actions_act_window_06">
+            <field name="name">Cabin Mass Editing</field>
+            <field name="res_model">cabin.mass_editing</field>
+            <field name="binding_model_id" ref="cap_boat.model_cabin"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="cap_boat.cabin_mass_editing_form_01"/>
+            <field name="target">new</field>
+        </record>
+
+        <!-- 'CABIN' MASS RESERVING -->
+        <record model="ir.actions.act_window" id="ir_actions_act_window_07">
+            <field name="name">Cabin Mass Reserving</field>
+            <field name="res_model">cabin.mass_reserving</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="cap_boat.cabin_mass_reserving_form_01"/>
+            <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>

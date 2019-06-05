@@ -1,0 +1,136 @@
+<odoo>
+    <!-- MANAGE 'CABIN' DATA -->
+    <data noupdate="0">
+
+        <!-- 109 CABIN -->
+        <record model="cabin" id="cabin_01">
+            <field name="name">109</field>
+            <field name="boat_id" ref="cap_boat.boat_01"/>
+            <field name="pontoon_id" ref="cap_boat.pontoon_01"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="amount">42</field>
+            <field name="color">#81D2EF</field>
+            <field name="x">0</field>
+            <field name="y">0</field>
+            <field name="is_reserved" eval="False"/>
+        </record>
+
+        <!-- 107 CABIN -->
+        <record model="cabin" id="cabin_02">
+            <field name="name">107</field>
+            <field name="boat_id" ref="cap_boat.boat_01"/>
+            <field name="pontoon_id" ref="cap_boat.pontoon_01"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="amount">42</field>
+            <field name="color">#81D2EF</field>
+            <field name="x">0</field>
+            <field name="y">1</field>
+            <field name="is_reserved" eval="False"/>
+        </record>
+
+        <!-- 105 CABIN -->
+        <record model="cabin" id="cabin_03">
+            <field name="name">105</field>
+            <field name="boat_id" ref="cap_boat.boat_01"/>
+            <field name="pontoon_id" ref="cap_boat.pontoon_01"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="amount">42</field>
+            <field name="color">#81D2EF</field>
+            <field name="x">0</field>
+            <field name="y">2</field>
+            <field name="is_reserved" eval="True"/>
+        </record>
+
+        <!-- 103 CABIN -->
+        <record model="cabin" id="cabin_04">
+            <field name="name">103</field>
+            <field name="boat_id" ref="cap_boat.boat_01"/>
+            <field name="pontoon_id" ref="cap_boat.pontoon_01"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="amount">42</field>
+            <field name="color">#81D2EF</field>
+            <field name="x">0</field>
+            <field name="y">3</field>
+            <field name="is_reserved" eval="False"/>
+        </record>
+
+        <!-- 101 CABIN -->
+        <record model="cabin" id="cabin_05">
+            <field name="name">101</field>
+            <field name="boat_id" ref="cap_boat.boat_01"/>
+            <field name="pontoon_id" ref="cap_boat.pontoon_01"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="amount">42</field>
+            <field name="color">#81D2EF</field>
+            <field name="x">0</field>
+            <field name="y">4</field>
+            <field name="is_reserved" eval="False"/>
+        </record>
+
+        <!-- 110 CABIN -->
+        <record model="cabin" id="cabin_06">
+            <field name="name">110</field>
+            <field name="boat_id" ref="cap_boat.boat_01"/>
+            <field name="pontoon_id" ref="cap_boat.pontoon_01"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="amount">42</field>
+            <field name="color">#81D2EF</field>
+            <field name="x">1</field>
+            <field name="y">0</field>
+            <field name="is_reserved" eval="False"/>
+        </record>
+
+        <!-- 108 CABIN -->
+        <record model="cabin" id="cabin_07">
+            <field name="name">108</field>
+            <field name="boat_id" ref="cap_boat.boat_01"/>
+            <field name="pontoon_id" ref="cap_boat.pontoon_01"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="amount">42</field>
+            <field name="color">#81D2EF</field>
+            <field name="x">1</field>
+            <field name="y">1</field>
+            <field name="is_reserved" eval="False"/>
+        </record>
+
+        <!-- 106 CABIN -->
+        <record model="cabin" id="cabin_08">
+            <field name="name">106</field>
+            <field name="boat_id" ref="cap_boat.boat_01"/>
+            <field name="pontoon_id" ref="cap_boat.pontoon_01"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="amount">42</field>
+            <field name="color">#81D2EF</field>
+            <field name="x">1</field>
+            <field name="y">2</field>
+            <field name="is_reserved" eval="False"/>
+        </record>
+
+        <!-- 104 CABIN -->
+        <record model="cabin" id="cabin_09">
+            <field name="name">104</field>
+            <field name="boat_id" ref="cap_boat.boat_01"/>
+            <field name="pontoon_id" ref="cap_boat.pontoon_01"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="amount">42</field>
+            <field name="color">#81D2EF</field>
+            <field name="x">1</field>
+            <field name="y">3</field>
+            <field name="is_reserved" eval="False"/>
+        </record>
+
+        <!-- 102 CABIN -->
+        <record model="cabin" id="cabin_10">
+            <field name="name">102</field>
+            <field name="boat_id" ref="cap_boat.boat_01"/>
+            <field name="pontoon_id" ref="cap_boat.pontoon_01"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="amount">42</field>
+            <field name="color">#81D2EF</field>
+            <field name="x">1</field>
+            <field name="y">4</field>
+            <field name="is_reserved" eval="False"/>
+        </record>
+
+    </data>
+</odoo>

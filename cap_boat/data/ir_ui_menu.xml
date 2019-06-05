@@ -1,0 +1,55 @@
+<odoo>
+    <!-- MANAGE 'IR.UI.MENU' DATA -->
+    <data noupdate="0">
+
+        <!-- 'BOATS' MENU -->
+        <record model="ir.ui.menu" id="ir_ui_menu_01">
+            <field name="name">Boats</field>
+            <field name="sequence">5</field>
+        </record>
+
+        <!-- 'BOATS / DATA' MENU -->
+        <record model="ir.ui.menu" id="ir_ui_menu_02">
+            <field name="name">Data</field>
+            <field name="parent_id" ref="cap_boat.ir_ui_menu_01"/>
+            <field name="sequence">10</field>
+        </record>
+
+        <!-- 'BOATS / DATA / BOATS' MENU -->
+        <record model="ir.ui.menu" id="ir_ui_menu_03">
+            <field name="name">Boats</field>
+            <field name="parent_id" ref="cap_boat.ir_ui_menu_02"/>
+            <field name="sequence">10</field>
+            <field name="action" ref="cap_boat.ir_actions_act_window_01"/>
+        </record>
+
+        <!-- 'BOATS / DATA / PONTOONS' MENU -->
+        <record model="ir.ui.menu" id="ir_ui_menu_04">
+            <field name="name">Pontoons</field>
+            <field name="parent_id" ref="cap_boat.ir_ui_menu_02"/>
+            <field name="sequence">20</field>
+            <field name="action" ref="cap_boat.ir_actions_act_window_02"/>
+        </record>
+
+        <!-- 'BOATS / DATA / CABINS' MENU -->
+        <record model="ir.ui.menu" id="ir_ui_menu_05">
+            <field name="name">Cabins</field>
+            <field name="parent_id" ref="cap_boat.ir_ui_menu_02"/>
+            <field name="sequence">30</field>
+            <field name="action" ref="cap_boat.ir_actions_act_window_03"/>
+        </record>
+
+
+
+
+        <!-- 'BOATS / CABINS MASS RESERVING ' MENU -->
+        <record model="ir.ui.menu" id="ir_ui_menu_42">
+            <field name="name">Cabin Mass Reserving</field>
+            <field name="parent_id" ref="cap_boat.ir_ui_menu_01"/>
+            <field name="sequence">20</field>
+            <field name="action" ref="cap_boat.ir_actions_act_window_07"/>
+        </record>
+
+
+    </data>
+</odoo>

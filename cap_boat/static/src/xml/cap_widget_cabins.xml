@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <div id="widget_cabins" t-name="Cabins">
+        <div id="pontoon" class="cabins boat">
+            <table id="cabins" class="cabins">
+                <tbody class="cabins">
+                    <tr t-foreach="widget.rows" t-as="row" class="cabins">
+                        <td t-foreach="row" t-as="element" t-att-bgcolor="element.color" t-att-title="element.title" class="cabins">
+                            <input t-if="element.cabin &amp;&amp; element.is_reserved === false" type="checkbox" t-att-id="element.id" class="cabins"/>
+<!--                            <input t-if="widget.mode == 'edit' &amp;&amp; element.cabin &amp;&amp; element.is_reserved === false" type="checkbox" t-att-id="element.id" class="cabins"/>-->
+
+                            <label t-att-for="element.id" tabindex="0" class="cabins">
+                                <font t-att-color="element.font_color">
+                                    <t t-esc="element.name"/>
+                                </font>
+                            </label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="cabins arrow-right"/>
+        </div>
+        <div t-if="widget.mode == 'edit'" id="cabins_buttons" class="cabins">
+            <button type="button" id="mass_editing" class="cabins">Edit</button>
+        </div>
+    </div>
+
+
+</templates>

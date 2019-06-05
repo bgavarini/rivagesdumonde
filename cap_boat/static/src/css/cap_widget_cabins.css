@@ -1,0 +1,139 @@
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* WIDGET */
+#widget_cabins {
+    margin-top: 91px;
+}
+
+/* ELEMENTS */
+.cabins td {
+    padding: 6px 6px 0px 7px;
+    border: 1px solid;
+}
+
+/* BOAT */
+.cabins boat {
+    width: 100%;
+}
+
+/* TABLE */
+.cabins table {
+    float: left;
+}
+
+/* ARROW LEFT */
+.cabins.arrow-right {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 33px solid transparent;
+    border-bottom: 33px solid transparent;
+    border-left: 33px solid #343a40;
+}
+
+/* HIDE CHECKBOXES */
+.cabins [type="checkbox"]:not(:checked),
+.cabins [type="checkbox"]:checked {
+    position: absolute;
+    opacity: 0;
+}
+
+/* PREPARE LABELS */
+.cabins [type="checkbox"]:not(:checked) + label,
+.cabins [type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 21px;
+    cursor: pointer;
+}
+
+/* CHECKBOX ASPECT */
+.cabins [type="checkbox"]:not(:checked) + label:before,
+.cabins [type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left:0;
+    top: 1px;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+}
+
+/* CHECK MARK ASPECT */
+.cabins [type="checkbox"]:not(:checked) + label:after,
+.cabins [type="checkbox"]:checked + label:after {
+    content: 'x';
+    position: absolute;
+    top: -4px;
+    left: 4px;
+    font-size: 17px;
+    color: #343a40;
+    transition: all .2s;
+}
+
+/* NON CHECKED CHECKBOX */
+.cabins [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* CHECKED CHECKBOX */
+.cabins [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* DISABLED CHECKBOX */
+.cabins [type="checkbox"]:disabled:not(:checked) + label:before,
+.cabins [type="checkbox"]:disabled:checked + label:before {
+    box-shadow: none;
+    border-color: #bbb;
+    background-color: #ddd;
+}
+
+/* DISABLED BUT CHECKED CHECKBOX */
+.cabins [type="checkbox"]:disabled:checked + label:after {
+    color: #999;
+}
+
+/* DISABLED BUT CHECKED CHECKBOX LABEL */
+.cabins [type="checkbox"]:disabled + label {
+    color: #aaa;
+}
+
+/* FOCUSED CHECKBOX */
+.cabins [type="checkbox"]:checked:focus + label:before,
+.cabins [type="checkbox"]:not(:checked):focus + label:before {
+    border: 1px dotted blue;
+}

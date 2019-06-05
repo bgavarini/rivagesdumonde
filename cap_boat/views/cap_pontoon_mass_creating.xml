@@ -1,0 +1,38 @@
+<odoo>
+    <!-- MANAGE 'PONTOON.MASS_CREATING' VIEWS -->
+    <data noupdate="0">
+
+        <!-- ~~~~~~~~~~ -->
+        <!-- FORM VIEWS -->
+        <!-- ~~~~~~~~~~ -->
+
+        <!-- DEFAULT FORM VIEW -->
+        <record model="ir.ui.view" id="pontoon_mass_creating_form_01">
+            <field name="name">pontoon_mass_creating_form_01</field>
+            <field name="model">pontoon.mass_creating</field>
+            <field name="arch" type="xml">
+
+                <form>
+                    <header/>
+                    <sheet>
+                        <div name="button_box" class="oe_button_box"/>
+                        <div name="title_box" class="oe_title"/>
+                        <group>
+                            <group>
+                                <field name="pontoon_qty"/>
+                            </group>
+                        </group>
+                        <notebook/>
+                        <footer>
+                            <button name="mass_creating" type="object" string="Create" class="btn-primary"
+                            attrs="{'invisible': [('pontoon_qty', '&lt;', 1)]}"/>
+                            <button special="cancel" string="Cancel" class="btn-default"/>
+                        </footer>
+                    </sheet>
+                </form>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

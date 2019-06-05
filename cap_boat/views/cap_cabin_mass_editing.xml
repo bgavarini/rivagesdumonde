@@ -1,0 +1,54 @@
+<odoo>
+    <!-- MANAGE 'CABIN.MASS_EDITING' VIEWS -->
+    <data noupdate="0">
+
+        <!-- ~~~~~~~~~~ -->
+        <!-- FORM VIEWS -->
+        <!-- ~~~~~~~~~~ -->
+
+        <!-- DEFAULT FORM VIEW -->
+        <record model="ir.ui.view" id="cabin_mass_editing_form_01">
+            <field name="name">cabin_mass_editing_form_01</field>
+            <field name="model">cabin.mass_editing</field>
+            <field name="arch" type="xml">
+
+                <form>
+                    <header/>
+                    <sheet>
+                        <div name="button_box" class="oe_button_box"/>
+                        <div name="title_box" class="oe_title"/>
+                        <group>
+                            <group name="currency">
+                                <field name="change_currency_id"/>
+                                <field name="currency_id_invisible" invisible="1"/>
+                                <field name="currency_id" attrs="{'invisible': [('currency_id_invisible', '=', True)]}"/>
+                            </group>
+                            <group name="amount">
+                                <field name="change_amount"/>
+                                <field name="amount_invisible" invisible="1"/>
+                                <field name="amount" attrs="{'invisible': [('amount_invisible', '=', True)]}"/>
+                            </group>
+                            <group name="color">
+                                <field name="change_color"/>
+                                <field name="color_invisible" invisible="1"/>
+                                <field name="color" widget="color" attrs="{'invisible': [('color_invisible', '=', True)]}"/>
+                            </group>
+                            <group name="reserved">
+                                <field name="change_is_reserved"/>
+                                <field name="is_reserved_invisible" invisible="1"/>
+                                <field name="is_reserved" attrs="{'invisible': [('is_reserved_invisible', '=', True)]}"/>
+                            </group>
+                        </group>
+                        <notebook/>
+                        <footer>
+                            <button name="mass_editing" type="object" string="Edit" class="btn-primary"/>
+                            <button special="cancel" string="Cancel" class="btn-default"/>
+                        </footer>
+                    </sheet>
+                </form>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

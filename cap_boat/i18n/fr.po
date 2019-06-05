@@ -1,0 +1,317 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* cap_boat
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e-20190109\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-06-05 13:20+0000\n"
+"PO-Revision-Date: 2019-06-05 13:20+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cap_boat
+#: model:ir.actions.act_window,name:cap_boat.ir_actions_act_window_04
+#: model_terms:ir.ui.view,arch_db:cap_boat.boat_form_01
+msgid "Add Pontoons"
+msgstr "Pontons - Ajout en masse"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__amount
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__amount
+msgid "Amount"
+msgstr "Montant"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__amount_invisible
+msgid "Amount Invisible"
+msgstr ""
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__boat_id
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_reserving__boat_id
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon__boat_id
+msgid "Boat"
+msgstr "Bateau"
+
+#. module: cap_boat
+#: code:addons/cap_boat/models/cap_boat.py:23
+#, python-format
+msgid "Boat n°%s"
+msgstr ""
+
+#. module: cap_boat
+#: model:ir.actions.act_window,name:cap_boat.ir_actions_act_window_01
+#: model:ir.ui.menu,name:cap_boat.ir_ui_menu_01
+#: model:ir.ui.menu,name:cap_boat.ir_ui_menu_03
+msgid "Boats"
+msgstr "Bateaux"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_reserving__cabin_ids_invisible
+msgid "Cabin Ids Invisible"
+msgstr ""
+
+#. module: cap_boat
+#: model:ir.actions.act_window,name:cap_boat.ir_actions_act_window_06
+msgid "Cabin Mass Editing"
+msgstr "Cabines - Édition en masse"
+
+#. module: cap_boat
+#: model:ir.actions.act_window,name:cap_boat.ir_actions_act_window_07
+#: model:ir.ui.menu,name:cap_boat.ir_ui_menu_42
+msgid "Cabin Mass Reserving"
+msgstr "Cabines - Réservation en masse"
+
+#. module: cap_boat
+#: code:addons/cap_boat/models/cap_cabin.py:23
+#, python-format
+msgid "Cabin n°%s"
+msgstr ""
+
+#. module: cap_boat
+#: model:ir.actions.act_window,name:cap_boat.ir_actions_act_window_03
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_reserving__cabin_ids
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon__cabin_ids
+#: model:ir.ui.menu,name:cap_boat.ir_ui_menu_05
+#: model_terms:ir.ui.view,arch_db:cap_boat.pontoon_form_01
+msgid "Cabins"
+msgstr "Cabines"
+
+#. module: cap_boat
+#: model_terms:ir.ui.view,arch_db:cap_boat.cabin_mass_editing_form_01
+#: model_terms:ir.ui.view,arch_db:cap_boat.cabin_mass_reserving_form_01
+#: model_terms:ir.ui.view,arch_db:cap_boat.pontoon_mass_creating_form_01
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__color
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__color
+msgid "Color"
+msgstr "Couleur"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__color_invisible
+msgid "Color Invisible"
+msgstr ""
+
+#. module: cap_boat
+#: model_terms:ir.ui.view,arch_db:cap_boat.pontoon_mass_creating_form_01
+msgid "Create"
+msgstr "Créer"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_boat__create_uid
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__create_uid
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__create_uid
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_reserving__create_uid
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon__create_uid
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon_mass_creating__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_boat__create_date
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__create_date
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__create_date
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_reserving__create_date
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon__create_date
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon_mass_creating__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__currency_id
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__currency_id
+msgid "Currency"
+msgstr "Devise"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__currency_id_invisible
+msgid "Currency Id Invisible"
+msgstr ""
+
+#. module: cap_boat
+#: model:ir.ui.menu,name:cap_boat.ir_ui_menu_02
+msgid "Data"
+msgstr "Catalogue"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_boat__display_name
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__display_name
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__display_name
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_reserving__display_name
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon__display_name
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon_mass_creating__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: cap_boat
+#. openerp-web
+#: code:addons/cap_boat/static/src/xml/cap_widget_cabins.xml:25
+#: model_terms:ir.ui.view,arch_db:cap_boat.cabin_mass_editing_form_01
+#, python-format
+msgid "Edit"
+msgstr "Modifier"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_boat__id
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__id
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__id
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_reserving__id
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon__id
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon_mass_creating__id
+msgid "ID"
+msgstr "ID"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_boat__image
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_reserving__image
+msgid "Image"
+msgstr "Image"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__is_reserved_invisible
+msgid "Is Reserved Invisible"
+msgstr ""
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_boat____last_update
+#: model:ir.model.fields,field_description:cap_boat.field_cabin____last_update
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing____last_update
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_reserving____last_update
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon____last_update
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon_mass_creating____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_boat__write_uid
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__write_uid
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__write_uid
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_reserving__write_uid
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon__write_uid
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon_mass_creating__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_boat__write_date
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__write_date
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__write_date
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_reserving__write_date
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon__write_date
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon_mass_creating__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_boat__name
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__name
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon__name
+msgid "Name"
+msgstr "Nom"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__pontoon_id
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_reserving__pontoon_id
+msgid "Pontoon"
+msgstr "Ponton"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__pontoon_id_invisible
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_reserving__pontoon_id_invisible
+msgid "Pontoon Id Invisible"
+msgstr ""
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_pontoon_mass_creating__pontoon_qty
+msgid "Pontoon Quantity To Create"
+msgstr "Quantité de ponton à créer"
+
+#. module: cap_boat
+#: code:addons/cap_boat/models/cap_pontoon.py:23
+#, python-format
+msgid "Pontoon n°%s"
+msgstr ""
+
+#. module: cap_boat
+#: model:ir.actions.act_window,name:cap_boat.ir_actions_act_window_02
+#: model:ir.model.fields,field_description:cap_boat.field_boat__pontoon_ids
+#: model:ir.ui.menu,name:cap_boat.ir_ui_menu_04
+#: model_terms:ir.ui.view,arch_db:cap_boat.boat_form_01
+msgid "Pontoons"
+msgstr "Pontons"
+
+#. module: cap_boat
+#: model_terms:ir.ui.view,arch_db:cap_boat.cabin_mass_reserving_form_01
+msgid "Reserve"
+msgstr "Réserver"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin__is_reserved
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__is_reserved
+msgid "Reserved"
+msgstr "Réservée"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__change_amount
+msgid "Update Amount"
+msgstr "Mettre à jour le montant"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__change_color
+msgid "Update Color"
+msgstr "Mettre à jour la couleur"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__change_currency_id
+msgid "Update Currency"
+msgstr "Mettre à jour la devise"
+
+#. module: cap_boat
+#: model:ir.model.fields,field_description:cap_boat.field_cabin_mass_editing__change_is_reserved
+msgid "Update Reserved"
+msgstr "Mettre à jour la réservation"
+
+#. module: cap_boat
+#: code:addons/cap_boat/models/cap_pontoon_mass_creating.py:35
+#, python-format
+msgid "You should not use these wizard for several boats at once."
+msgstr "Vous ne devriez pas utiliser ce wizard pour plusieurs bateaux en même temps."
+
+#. module: cap_boat
+#: model:ir.model,name:cap_boat.model_boat
+msgid "boat"
+msgstr "boat"
+
+#. module: cap_boat
+#: model:ir.model,name:cap_boat.model_cabin
+msgid "cabin"
+msgstr "cabin"
+
+#. module: cap_boat
+#: model:ir.model,name:cap_boat.model_cabin_mass_editing
+msgid "cabin.mass_editing"
+msgstr "cabin.mass_editing"
+
+#. module: cap_boat
+#: model:ir.model,name:cap_boat.model_cabin_mass_reserving
+msgid "cabin.mass_reserving"
+msgstr "cabin.mass_reserving"
+
+#. module: cap_boat
+#: model:ir.model,name:cap_boat.model_pontoon
+msgid "pontoon"
+msgstr "pontoon"
+
+#. module: cap_boat
+#: model:ir.model,name:cap_boat.model_pontoon_mass_creating
+msgid "pontoon.mass_creating"
+msgstr "pontoon.mass_creating"

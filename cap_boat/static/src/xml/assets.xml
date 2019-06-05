@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- MANAGE ASSETS -->
+    <data>
+
+        <!-- BACKEND ASSETS -->
+        <template id="assets_backend" name="assets_backend" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <!-- JAVASCRIPT -->
+                <script type="text/javascript" src="/cap_boat/static/src/js/cap_widget_cabins.js"/>
+                <!-- CSS -->
+                <link rel="stylesheet" href="/cap_boat/static/src/css/cap_widget_cabins.css"/>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

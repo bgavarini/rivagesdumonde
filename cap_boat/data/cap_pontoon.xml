@@ -1,0 +1,12 @@
+<odoo>
+    <!-- MANAGE 'PONTOON' DATA -->
+    <data noupdate="0">
+
+        <!-- MAIN PONTOON -->
+        <record model="pontoon" id="pontoon_01">
+            <field name="name">Pont Principal</field>
+            <field name="boat_id" ref="cap_boat.boat_01"/>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,24 @@
+<odoo>
+    <!-- MANAGE 'SALE.ORDER' VIEWS -->
+    <data noupdate="0">
+
+        <!-- ~~~~~~~~~~ -->
+        <!-- FORM VIEWS -->
+        <!-- ~~~~~~~~~~ -->
+
+        <!-- DEFAULT FORM VIEW -->
+        <record model="ir.ui.view" id="sale_order_form_01">
+            <field name="name">sale_order_form_01</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//header/field[@name='state']" position="after">
+                    <button type="action" name="%(cap_boat.ir_actions_act_window_07)d" string="Reserve Cabins"/>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

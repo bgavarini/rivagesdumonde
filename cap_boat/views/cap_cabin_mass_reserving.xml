@@ -1,0 +1,44 @@
+<odoo>
+    <!-- MANAGE 'CABIN.MASS_EDITING' VIEWS -->
+    <data noupdate="0">
+
+        <!-- ~~~~~~~~~~ -->
+        <!-- FORM VIEWS -->
+        <!-- ~~~~~~~~~~ -->
+
+        <!-- DEFAULT FORM VIEW -->
+        <record model="ir.ui.view" id="cabin_mass_reserving_form_01">
+            <field name="name">cabin_mass_reserving_form_01</field>
+            <field name="model">cabin.mass_reserving</field>
+            <field name="arch" type="xml">
+
+                <form>
+                    <header/>
+                    <sheet>
+                        <div name="button_box" class="oe_button_box"/>
+                        <div name="title_box" class="oe_title"/>
+                        <group>
+                            <group name="image">
+                                <field nolabel="1" name="image" widget="image" readonly="1" attrs="{'invisible': [('boat_id', '=', False)]}"/>
+                            </group>
+                            <group name="boat">
+                                <field name="boat_id"/>
+                                <field name="pontoon_id_invisible" invisible="1"/>
+                                <field name="pontoon_id" attrs="{'invisible': [('pontoon_id_invisible', '=', True)]}"/>
+                                <field name="cabin_ids_invisible" invisible="1"/>
+                                <field name="cabin_ids" colspan="2" nolabel="1" widget="cabins" attrs="{'invisible': [('cabin_ids_invisible', '=', True)]}"/>
+                            </group>
+                        </group>
+                        <notebook/>
+                        <footer>
+                            <button name="mass_reserving" type="object" string="Reserve" class="btn-primary"/>
+                            <button special="cancel" string="Cancel" class="btn-default"/>
+                        </footer>
+                    </sheet>
+                </form>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

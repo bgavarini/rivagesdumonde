@@ -1,0 +1,58 @@
+<odoo>
+    <!-- MANAGE 'BOAT' VIEWS -->
+    <data noupdate="0">
+
+        <!-- ~~~~~~~~~~ -->
+        <!-- LIST VIEWS -->
+        <!-- ~~~~~~~~~~ -->
+
+        <!-- DEFAULT LIST VIEW -->
+        <record model="ir.ui.view" id="boat_list_01">
+            <field name="name">boat_list_01</field>
+            <field name="model">boat</field>
+            <field name="arch" type="xml">
+
+                <tree>
+                    <field name="name"/>
+                </tree>
+
+            </field>
+        </record>
+
+        <!-- ~~~~~~~~~~ -->
+        <!-- FORM VIEWS -->
+        <!-- ~~~~~~~~~~ -->
+
+        <!-- DEFAULT FORM VIEW -->
+        <record model="ir.ui.view" id="boat_form_01">
+            <field name="name">boat_form_01</field>
+            <field name="model">boat</field>
+            <field name="arch" type="xml">
+
+                <form>
+                    <header>
+                        <button string="Add Pontoons" type="action" name="%(cap_boat.ir_actions_act_window_04)d"/>
+                    </header>
+                    <sheet>
+                        <div name="button_box" class="oe_button_box"/>
+                        <div name="title_box" class="oe_title">
+                            <h1>
+                                <field name="name"/>
+                            </h1>
+                        </div>
+                        <group name="image">
+                            <field name="image" widget="image"/>
+                        </group>
+                        <notebook>
+                            <page name="pontoons" string="Pontoons">
+                                <field name="pontoon_ids"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>
